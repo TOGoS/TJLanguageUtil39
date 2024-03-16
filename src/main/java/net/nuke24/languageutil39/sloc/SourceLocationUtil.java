@@ -24,11 +24,11 @@ public class SourceLocationUtil
 	}
 	
 	public static String sourceLocationToSuffix(SourceSpan ss, String prefix) {
-		return (
+		return (ss == null || (
 			ss.getFileUri() == null &&
 			ss.getLineIndex() == -1 && ss.getColumnIndex() == -1 &&
 			ss.getEndLineIndex() == -1 && ss.getEndColumnIndex() == -1
-		) ? "" : prefix +
+		)) ? "" : prefix +
 			ss.getFileUri()+"#"+
 			(ss.getLineIndex()+1)+","+(ss.getColumnIndex()+1)+
 			(isPointForStringificationPurposes(ss) ? "" : ".."+(ss.getEndLineIndex()+1)+","+(ss.getEndColumnIndex()+1));

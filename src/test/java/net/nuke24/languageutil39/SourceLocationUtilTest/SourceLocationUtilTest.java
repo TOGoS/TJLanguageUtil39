@@ -2,6 +2,7 @@ package net.nuke24.languageutil39.SourceLocationUtilTest;
 
 import junit.framework.TestCase;
 import net.nuke24.languageutil39.sloc.BasicSourceSpan;
+import net.nuke24.languageutil39.sloc.SourceLocationUtil;
 import net.nuke24.languageutil39.sloc.SourceSpan;
 
 public class SourceLocationUtilTest
@@ -19,5 +20,9 @@ extends TestCase
 	}
 	public void testNotEqualsNull() {
 		assertFalse(ss1.equals(null));
+	}
+	
+	public void testSuffix() {
+		assertEquals("", SourceLocationUtil.sourceLocationToSuffix(null, " whatever "));
 	}
 }

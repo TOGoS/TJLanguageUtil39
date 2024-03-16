@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.nuke24</groupId>
 	<artifactId>languageutil39</artifactId>
-	<version>39.0.3-SNAPSHOT</version>
+	<version>39.0.4</version>
 	<packaging>jar</packaging>
 	<name>TJLanguageUtil39</name>
 	
@@ -17,14 +17,6 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/TOGoS/TJLanguageUtil39</url>
-		</repository>
-	</distributionManagement>
 	
 	<dependencies>
 		<dependency>
